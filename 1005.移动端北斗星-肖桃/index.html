@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+  <!-- 禁止将数字转为号码 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+  <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+  <title>首页网</title>
+  <!-- 重置样式 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 图标字体 -->
+  <link rel="stylesheet" href="css/font/iconfont.css">
+  <!-- 本页样式 -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- jq -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- 移动端轮播图JS -->
+  <script src="js/TouchSlide.1.1.js"></script>
+  <!-- 本页JS -->
+  <script src="js/index.js"></script>
+  <!-- 将px转rem的公式代码 -->
+  <script>
+    var w = document.documentElement.getBoundingClientRect().width;
+    var bili = w / 7.5;
+    document.documentElement.style.fontSize = bili + "px";
+  </script>
+</head>
+
+<body>
+  <!-- 页头 -->
+  <div class="header">
+    <span class="logo"></span>
+    <div class="rig">
+      <span class="search search-wrap  pore">
+        <div class="search" id="search" style="width: 100%;height: 100%;">
+        </div>
+        <!-- 搜索弹出层 -->
+        <form action="#" method="get" class="open-search pore none" id="open1">
+          <div class="up"></div>
+          <input type="text" value="请输入关键字" id="ipt">
+          <button type="submit" class="search input-search"></button>
+        </form>
+      </span>
+      <span class="menu menu-wrap pore">
+        <div class="menu" style="width: 100%;height: 100%;margin: 0;" id="menu">
+        </div>
+        <!-- 菜单弹出层 -->
+        <div class="open-menu none" id="open2">
+          <ul>
+            <li>
+              <a href="#"><i class="iconfont icon-weibiaoti-"></i><span>首页</span></a>
+            </li>
+            <li>
+              <a class="on" href="#"><i class="iconfont icon-dalou"></i><span>关于华信</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="iconfont icon-chanpinzhongxin-xiugai"></i><span>产品中心</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="iconfont icon-qianzi"></i><span>解决方案</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="iconfont icon-liebiao"></i><span>公司新闻</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="iconfont icon-zixun-rencaizhaopin"></i><span>人才招聘</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="iconfont icon-lianxiwomen"></i><span>联系我们</span></a>
+            </li>
+          </ul>
+          <div class="up"></div>
+        </div>
+      </span>
+    </div>
+
+  </div>
+  <!-- 页面主体 -->
+  <div class="main">
+    <!-- 轮播图 -->
+    <div id="slideBox" class="slideBox">
+      <div class="bd">
+        <ul>
+          <li>
+            <a class="pic" href="#"><img style="width: 100%;" src="image/banner1.png" /></a>
+          </li>
+          <li>
+            <a class="pic" href="#"><img style="width: 100%;" src="image/banner1.png" /></a>
+          </li>
+          <li>
+            <a class="pic" href="#"><img style="width: 100%;" src="image/banner1.png" /></a>
+          </li>
+          <li>
+            <a class="pic" href="#"><img style="width: 100%;" src="image/banner1.png" /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- 小圆点指示器 -->
+      <div class="hd">
+        <ul></ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      TouchSlide({
+        slideCell: "#slideBox",
+        titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell: ".bd ul",
+        effect: "leftLoop",
+        autoPage: true, //自动分页
+        autoPlay: true //自动播放
+      });
+    </script>
+    <!-- 图标菜单 -->
+    <div class="icon-menu">
+      <a href="#">
+        <div class="icon icon1"></div>
+        <p>关于华信</p>
+      </a>
+      <a href="#">
+        <div class="icon icon2"></div>
+        <p>产品中心</p>
+      </a>
+      <a href="#">
+        <div class="icon icon3"></div>
+        <p>解决方案</p>
+      </a>
+      <a href="#">
+        <div class="icon icon4"></div>
+        <p>联系我们</p>
+      </a>
+    </div>
+    <!-- 热点新闻 -->
+    <div class="hot-news">
+      <h2 class="title">热点新闻</h2>
+      <span class="line">|</span>
+      <i></i>
+      <p class="content">
+        <span>UFirbird战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第2条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第3条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第4条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第5条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第6条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第7条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第8条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第9条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+        <span class="none">第10条新闻战略合作发布，打响北斗低功能耗物联网第一弹</span>
+      </p>
+    </div>
+    <!-- 列表轮播 -->
+    <div class="list-slide">
+      <div class="slide-title" id="tab-title">
+        <div class="on">高精准定位天线</div>
+        <div>数传电台</div>
+        <div>卫星通信</div>
+      </div>
+      <div class="tab-pal" id="tab-pal">
+        <!-- 选项卡1 -->
+        <div class="my-slide pore" id="myslide1">
+          <!-- 卡片容器1 -->
+          <div class="slide-content">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片容器2 -->
+          <div class="slide-content none">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片容器3 -->
+          <div class="slide-content none">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:;" class="slide-left" id="left"></a>
+          <a href="javascript:;" class="slide-right" id="right"></a>
+        </div>
+        <!-- 选项卡2 -->
+        <div class="my-slide pore none" id="myslide2">
+          <!-- 卡片容器1 -->
+          <div class="slide-content">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide1">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片容器2 -->
+          <div class="slide-content none">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片容器3 -->
+          <div class="slide-content none">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:;" class="slide-left" id="left2"></a>
+          <a href="javascript:;" class="slide-right" id="right2"></a>
+        </div>
+        <!-- 选项卡3 -->
+        <div class="my-slide pore none" id="myslide3">
+          <!-- 卡片容器1 -->
+          <div class="slide-content">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide3.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片容器2 -->
+          <div class="slide-content none">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide2.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <!-- 卡片容器3 -->
+          <div class="slide-content none">
+            <div class="slide-pal">
+              <!-- 卡片1 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片2 -->
+              <div class="slide1 slide2">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+              <!-- 卡片3 -->
+              <div class="slide1">
+                <a href="#">
+                  <img src="image/slide1.png" alt="">
+                </a>
+                <p class="title">3D基准站天线</p>
+                <a class="more" href="#">查看详情>></a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:;" class="slide-left" id="left3"></a>
+          <a href="javascript:;" class="slide-right" id="right3"></a>
+        </div>
+      </div>
+    </div>
+    <!-- 新闻中心 -->
+    <div class="news-center">
+      <div class="news-title">
+        <span><span class="big">新闻中心</span>/NEWS CENTER</span>
+        <a href="#">查看更多>></a>
+      </div>
+      <ul class="news-ul">
+        <li>
+          <a class="clearfix" href="#">
+            <span class="li-icon"></span>
+            <span class="text cutFont">RTK电台哪家强？eRadio&#8482智能电台大比测</span>
+            <span class="fr date">2018-07-16</span>
+          </a>
+        </li>
+        <li>
+          <a class="clearfix" href="#">
+            <span class="li-icon"></span>
+            <span class="text cutFont">共建北斗新时代|华信亮相第九届中国卫星导航啦啦啦啦啦啦啦啦</span>
+            <span class="fr date">2018-07-16</span>
+          </a>
+        </li>
+        <li>
+          <a class="clearfix" href="#">
+            <span class="li-icon"></span>
+            <span class="text cutFont">创新·融合|华信引领高精度天线进入全网通时代</span>
+            <span class="fr date">2018-07-16</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 页尾 -->
+  <div class="footer tc">
+    <ul class="foot  clearfix">
+      <li class="fl">
+        <a href="#">人才招聘</a>
+      </li>
+      <li class="fl line">|</li>
+      <li class="fl">
+        <a href="#">留言反馈</a>
+      </li>
+      <li class="fl line">|</li>
+      <li class="fl">
+        <a href="#">友情链接</a>
+      </li>
+    </ul>
+    <p>翻版必究 粤ICP备09221680号</p>
+    <p>Copyright&copy;2012深圳市华信天线技术有限公司</p>
+  </div>
+  <!-- 遮罩层 -->
+  <div class="mask none" id="mask"></div>
+
+</body>
+
+</html>
