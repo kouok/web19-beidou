@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        body{
+            font-size: 0.12rem;
+            background: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <!-- 遮罩层 -->
+    <div class="mask" id="mask"></div>
+
+    <!--S 头部 -->
+    <header class="header">
+        <div class="logo"><img src="img/2-华信天线.png" alt=""></div>
+        <div class="find-group">
+            <!-- 查询 -->
+            <div class="query">
+                <a href="javascript:;" style="display: block;" class="toggle-show"><span class="iconfont icon-fangdajing"></span></a>
+                <!-- 搜索栏 -->
+                <div class="search" id="search">
+                    <input type="text" placeholder="请输入关键词" style="border-bottom: 1px solid #ccc;">
+                    <span class="iconfont icon-fangdajing"></span>
+                </div>
+            </div>
+            <!-- 任务 -->
+            <div class="task">
+                <a  href="javascript:;"style="display: block;" class="task-toggle"><span class="iconfont icon-task"></span></a>
+                <ul class="taskList" id="taskList">
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-lvguan"></span>
+                            <span class="" >首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-lvguan"></span>
+                            <span class="" >关于华信</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-chanpin1"></span>
+                            <span class="" >产品中心</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-jiejuefangan"></span>
+                            <span class="" >解决方案</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-lvguan"></span>
+                            <span class="" >公司新闻</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-lvguan"></span>
+                            <span class="" >人才招聘</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-lianxiwomen"></span>
+                            <span class="" >联系我们</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--E 头部 -->
+
+
+
+    <!-- S轮播图 -->
+    <div class="container">
+        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <li>
+                        <a class="pic" href="#"><img src="img/01.jpg" /></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="img/02.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="img/03.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="img/04.jpg"/></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <!--E 轮播图 -->
+
+
+
+
+    <!-- S关于华信 -->
+    <div class="Aboutwe">
+        <a class="we-item">
+            <div>
+                <div class="tit-icon" style="background-color: #28b1f9;"><span class="iconfont icon-lvguan" style="font-size: 0.26rem;"></span></div>
+                <p>关于华信</p>
+            </div>
+        </a>
+        <a class="we-item">
+            <div>
+                <div class="tit-icon" style="background-color: #ff8d3a;"><span class="iconfont icon-chanpin" style="font-size: 0.26rem;"></span></div>
+                <p>产品中心</p>
+            </div>
+        </a>
+        <a class="we-item">
+            <div>
+                <div class="tit-icon" style="background-color: #6fd700;"><span class="iconfont icon-jiejuefangan1" style="font-size: 0.36rem;"></span></div>
+                <p>解决方案</p>
+            </div>
+        </a>
+        <a class="we-item">
+            <div>
+                <div class="tit-icon"  style="background-color: #ff6868;"><span class="iconfont icon-lianxiwomen" style="font-size: 0.26rem;"></span></div>
+                <p>联系我们</p>
+            </div>
+        </a>
+    </div>
+   <!-- E关于华信 -->
+
+
+
+
+    <!--S- Hot News-->
+    <div class="news">
+            <h3 class="title">热点新闻</h3>
+        <div class="spacer"></div>
+        <div class="box">
+            <span class="iconfont icon-shengyinyinliang red"></span>
+            <ul class="news_li">
+                <li><a href="#">UFirebird战略合作发布，打响北斗低功耗物联网第一弹</a></li>
+                <li><a href="#">2UFirebird战略合作发布</a></li>
+                <li><a href="#">3UFirebird战略合作发布</a></li>
+                <li><a href="#">4UFirebird战略合作发布</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--E- Hot News-->
+
+
+
+    <!-- S-tab和轮播图 -->
+    <div id="tabBox" class="tabBox">
+        <div class="hd">
+            <ul class="hd-list">
+                <li class="on"><a href="javascript:;">高精度定位天线</a></li>
+                <li><a href="javascript:;">数传电台</a></li>
+                <li><a href="javascript:;">卫星通信</a></li>
+            </ul>
+        </div>
+        <div class="bd" style="height: 100%;">
+            <div id="picScroll" class="picScroll current">
+				<div class="hd">
+						<span class="next">></span>
+						<ul style="display: none;"></ul>
+						<span class="prev"><</span>
+				</div>
+				<div class="bd">
+						<ul>
+							<li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+				</div>
+            </div>
+
+            <div id="picScroll2" class="picScroll " style="top: -1.7rem;">
+				<div class="hd">
+						<span class="next">></span>
+						<ul style="display: none;"></ul>
+						<span class="prev"><</span>
+				</div>
+				<div class="bd">
+						<ul>
+							<li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+				</div>
+            </div>
+            
+            <div id="picScroll3" class="picScroll" style="top: -3.4rem;">
+				<div class="hd">
+						<span class="next">></span>
+						<ul style="display: none;"></ul>
+						<span class="prev"><</span>
+				</div>
+				<div class="bd">
+						<ul>
+							<li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/2D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/600A-新.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img _src="img/3D扼流圈天线.png" src="images/blank.png" />
+                                    <p>3D基准站天线</p>
+                                    <span class="lh">查看详情>></span>
+                                </a>
+                            </li>
+						</ul>
+
+				</div>
+			</div>
+        </div>
+    </div>
+    <!-- E-tab和轮播图 -->
+
+
+    <!-- S新闻列 -->
+    <section class="newsCenter blueT">
+        <div class="hd">
+            <h3>新闻中心<span style="font-size: 0.12rem;">/NEWS CENTER</span></h3>
+            <a href="#:;" class="blueT">查看更多>></a>
+        </div>
+        <div class="bd">
+            <ul>
+                <li>
+                    <img src="img/椭圆.png" alt="">
+                    <a href="#">
+                        <span class="mes">RTK电台哪家强？eRadio™智能电台大比测</span>
+                        <span class="time gray">2018-07-16</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="img/椭圆.png" alt="">
+                    <a href="#">
+                        <span class="mes">RTK电台哪家强？eRadio™智能电台大比测</span>
+                        <span class="time gray">2018-07-16</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="img/椭圆.png" alt="">
+                    <a href="#">
+                        <span class="mes">RTK电台哪家强？eRadio™智能电台大比测</span>
+                        <span class="time gray">2018-07-16</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--E新闻列 -->
+
+
+    <!--S尾部 -->
+    <footer class="footer tc">
+
+        <p>
+            <a href="#" class="blueT">人才招聘</a>
+            <span class="blueT spacer">|</span>
+            <a href="#" class="blueT">留言反馈</a>
+            <span class="blueT spacer">|</span>
+            <a href="#" class="blueT">友情链接</a>
+        </p>
+        <p class="gray">翻版必究 粤ICP备09221680号</p>
+        <p class="gray">Copyright © 2012 深圳市华信天线技术有限公司 </p>
+    </footer>
+    <!--E尾部 -->
+    </div>
+<script src="js/Zepto.js"></script>
+<script src="js/index.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+
+
+<!-- 顶部轮播图 -->
+<script type="text/javascript">
+  
+    TouchSlide({ 
+            slideCell:"#slideBox",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPage:true ,//自动分页
+            autoPlay:true 
+        });
+</script>
+
+
+<!--页面中间的滑动轮播 -->
+<script type="text/javascript">
+
+    $(function(){
+            $("#tabBox").tabsToggle();
+        })
+
+    TouchSlide({ 
+        slideCell:"#picScroll",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        autoPage:true, //自动分页
+        pnLoop:"false", // 前后按钮不循环
+        switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+    });
+
+    TouchSlide({ 
+        slideCell:"#picScroll2",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        autoPage:true, //自动分页
+        pnLoop:"false", // 前后按钮不循环
+        switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+    });
+
+    TouchSlide({ 
+        slideCell:"#picScroll3",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        autoPage:true, //自动分页
+        pnLoop:"false", // 前后按钮不循环
+        switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+    });
+</script>
+
+<!-- 比例 -->
+<script>
+    var html = document.documentElement;
+    var w = html.getBoundingClientRect().width;
+    var percent = w / 3.75;
+    html.style.fontSize = percent + 'px';
+</script>
+
+</body>
+</html>
