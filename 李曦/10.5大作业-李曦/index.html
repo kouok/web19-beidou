@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 引入首页样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入bs -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- 引入jquery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- 引入js -->
+    <script src="js/index.js"></script>
+
+</head>
+<script>
+    //  将px转rem的公式代码 
+    var w = document.documentElement.getBoundingClientRect().width;
+    var bili = w / 7.5; //100
+    document.documentElement.style.fontSize = bili + "px";
+</script>
+
+<body>
+    <div id="search_mask">
+        <div class="search_bg">
+            <div class="triangle"></div>
+            <input type="text" placeholder="请输入关键字">
+            <div class="search search2 fr"></div>
+        </div>
+    </div>
+    <div id="nav_dropdown_mask" style="display: none;">
+        <div class="navlist fr">
+            <div class="triangle"></div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/h1_03.jpg" alt=""> 首页
+                    </a>
+                </li>
+                <li class="currentLi">
+                    <a href="#">
+                        <img src="images/h2_03.jpg" alt=""> 关于华信
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="images/h3_03.jpg" alt="">产品中心</a>
+                </li>
+                <li>
+                    <a href="#"> <img src="images/h4_03.jpg" alt="">解决方案</a>
+                </li>
+                <li>
+                    <a href="#"> <img src="images/h5_03.jpg" alt="">公司新闻</a>
+                </li>
+                <li>
+                    <a href="#"> <img src="images/h6_03.jpg" alt="">人才招聘</a>
+                </li>
+                <li>
+                    <a href="#"> <img src="images/h7_03.jpg" alt="">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="logo"></div>
+        <div class="search" id="search"></div>
+        <div class="nav_dropdown "></div>
+    </header>
+    <div class="main">
+        <div class="slider">
+            <ul class="piclist">
+                <li>
+                    <a href="#">
+                        <img src="images/banner_02.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="circle">
+                <li class="currentCircle"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="infoList">
+            <div>
+                <img src="images/p1_03.jpg" alt="">
+                <p>关于华信</p>
+            </div>
+            <div>
+                <img src="images/p2_03.jpg" alt="">
+                <p>产品中心</p>
+            </div>
+            <div>
+                <img src="images/p3_05.jpg" alt="">
+                <p>解决方案</p>
+            </div>
+            <div>
+                <img src="images/p4_07.jpg" alt="">
+                <p>联系我们</p>
+            </div>
+        </div>
+        <div class="latestNews">
+            <div class="newsHead fl">热点新闻</div>
+            <span class="split fl">|</span>
+            <div class="newsContent fl">
+                <img src="images/volume_03.jpg" alt="">
+                <p>UFirebird战略合作发布，打响北斗低功耗物联网第一弹</p>
+            </div>
+        </div>
+        <div class="sliderTab">
+            <ul class="sliderTab_hd">
+                <li class="currentSlideTab">高精度定位天线</li>
+                <li>数传电台</li>
+                <li>卫星通信</li>
+            </ul>
+            <div class="sliderTab_bd">
+                <div class="sliderTab_bd_t">
+                    <div>
+                        <ul class="piclist2">
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <!-- <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div style="display: none;">
+                        <ul class="piclist2">
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: none;">
+                        <ul class="piclist2">
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                            <li>
+                                <img src="images/l1_03.jpg" alt="">
+                                <h5>3D基准站天线</h5>
+                                <a href="#">查看详情>></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn-l"><</button>
+                <button class="btn-r currentBtn">></button>
+            </div>
+        </div>
+        <div class="newsCenter">
+            <div class="newsCenter-hd">
+                <span class="newsCenterOrder fl"></span>
+                <h4>新闻中心<span>/NEWS CENTER</span></h4>
+                <a href="#">查看更多>></a>
+            </div>
+            <ul class="articleLink">
+                <li>
+                    <span class="articleCircle">〇</span>
+                    <a href="#">RTK电台哪家强？eRadio™智能电台大比测<small class="fr">2018-07-16</small></a>
+                </li>
+                <li>
+                    <span class="articleCircle">〇</span>
+                    <a href="#">RTK电台哪家强？eRadio™智能电台大比测<small class="fr">2018-07-16</small></a>
+                </li>
+                <li>
+                    <span class="articleCircle">〇</span>
+                    <a href="#">RTK电台哪家强？eRadio™智能电台大比测<small class="fr">2018-07-16</small></a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p>
+                <a href="#">人才招聘</a>
+                <span class="footer_split">|</span>
+                <a href="#">留言反馈</a>
+                <span class="footer_split">|</span>
+                <a href="#">友情链接</a>
+            </p>
+            <p>翻版必究 粤ICP备09221680号</p>
+            <p>Copyright © 2012 深圳市华信天线技术有限公司</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
