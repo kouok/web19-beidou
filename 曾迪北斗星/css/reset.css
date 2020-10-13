@@ -1,0 +1,184 @@
+/*
+*
+    作者：张三
+    创建日期：2019-5-08 09:37:55
+    修改日期：2019-5-08 09:38:00
+    项目地址：http://www.baidu.com
+    版本号：ver 1.0
+*
+*/
+
+body{background:#fff;margin:0;padding:0;line-height:24px; font-size:12px;font-family:"Microsoft YaHei","微软雅黑",Tahoma,Arial}
+/*清空浏览器的默认样式*/
+div,p,ul,ol,li,dd,h1,h2,h3,h4,h5,h6,dt,dl,form,input,textarea,blockquote,th,td{padding:0;margin:0}
+        /*cursor鼠标光标
+        cursor:pointer 手的形状;
+               default 默认：箭头
+                text  可输入，大I
+        */
+label {cursor:pointer}
+h1,h2,h3,h4,h5,h6{font-size:0.16rem; font-weight:400}
+ul,ol{list-style:none}
+em,i { font-style:normal}
+a{ color:#000;text-decoration:none; list-style: none;}
+a:hover{color: #ff6600;/* text-decoration:none; */}
+/*告诉部分浏览器不要给图片添加边框*/
+img{ border:none}
+table, th, td {border-collapse: collapse;border-spacing: 0}
+/*文本处理与对齐方式*/
+.tc{text-align:center}
+.tl{text-align:left} 
+.txj{text-align: justify;color:gray}
+.tr{text-align:right}
+.fb{font-weight:bold}
+.block{display: block;}
+/*将超出宽度的文字截字并用省略号表示*/
+.cutFont{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+/*颜色*/
+.line24{line-height:0.24rem}
+.cor666{color: #666666}
+.cor000{color:#000}
+.blue,a.blue{ color:#157ff6}
+.brown  { color:#666}
+.gray   { color:#999}
+.green  { color:#2d9b01}
+.orange { color:#ff6400}
+.red{ color:#f00!important}
+.white,a.white { color:#fff}
+/*字体大小*/
+.fontw700{font-weight: 700;}
+.disflex{display: flex}
+.flex{flex:1}
+.font11{font-size:0.11rem}
+.font12 { font-size:0.12rem}
+.font14 { font-size:0.14rem}
+.font16 { font-size:0.16rem}
+.font17 { font-size:0.17rem}
+.font18 { font-size:0.18rem}   
+.font20 { font-size:0.2rem}   
+.font22 {font-size:0.22rem}
+.font21 {font-size: 0.21rem}
+.font24 {font-size:0.24rem}
+.font25{font-size:0.25rem}
+.font30{font-size:0.3rem}
+/*浮动公共样式*/
+.fl{float:left}
+.fr{float:right}
+.cl{clear:both}
+/*外间距公共样式*/
+
+.mt5{ margin-top:0.05rem}
+.mt4{ margin-top:0.04rem}
+.mt7{ margin-top:0.07rem}
+.mt8{ margin-top:0.8rem}
+.mt10{ margin-top:0.1rem}
+.mt12{ margin-top:0.12rem}
+.mt13{ margin-top:0.13rem}
+.mt15{ margin-top:0.15rem}
+.mt16{ margin-top:0.16rem}
+.mt17{ margin-top:0.17rem}
+.mt18{margin-top:0.18rem}
+.mt20{ margin-top:0.2rem}
+.mt22{ margin-top:0.22rem}
+.mt25{ margin-top:0.25rem}
+.mt28{ margin-top:0.28rem}
+.mt30{ margin-top:0.3rem}
+.mt35{ margin-top:0.35rem}
+.mt37{ margin-top:0.37rem}
+.mt40{ margin-top:0.4rem}
+.mt50{ margin-top:0.5rem}
+.mt70{margin-top:0.7rem}
+.mt100{margin-top:1rem}
+.mb5{margin-bottom:0.05rem}
+.mb8{margin-bottom:0.08rem}
+.mb10{margin-bottom:0.1rem}
+.mb15{margin-bottom:0.15rem}
+.mb20{ margin-bottom:0.2rem}
+#mt20{ margin-top:0.2rem}
+.mb22{ margin-bottom:0.22rem}
+.mb25{ margin-bottom:0.25rem}
+.mb30{ margin-bottom:0.3rem}
+.mb35{ margin-bottom:0.35rem}
+.mb37{ margin-bottom:0.37rem}
+.mb48{margin-bottom:0.48rem}
+.mb55{margin-bottom:0.55rem}
+.mr1{ margin-right:0.01rem}
+.mr5{ margin-right:0.05rem }
+.mr4{ margin-right:0.04rem }
+.mr7{ margin-right: 0.07rem}
+.mr8{ margin-right: 0.8rem}
+.mr9{ margin-right: 0.09rem}
+.mr10{margin-right: 0.1rem}
+.mr14{margin-right:0.14rem}
+.mr11{margin-right:0.11rem}
+.mr12{margin-right: 0.12rem}
+.mr15{margin-right: 0.15rem}
+.mr17{margin-right: 0.17rem}
+.mr20{margin-right: 0.2rem}
+.mr21{margin-right: 0.21rem}
+.mr24{margin-right: 0.24rem}
+.mr16{margin-right: 0.16rem}
+.mr25{margin-right: 0.25rem}
+.mr27{margin-right: 0.27rem}
+.mr30{margin-right: 0.3rem}
+.mr40{margin-right: 0.4rem}
+.mr43{margin-right: 0.43rem}
+.mr36{margin-right: 0.36rem}
+.mr57{margin-right: 0.57rem}
+.mr65{margin-right: 0.65rem}
+.mr70{margin-right: 0.7rem}
+.mr87{margin-right: 0.87rem}
+.mr98{margin-right: 0.98rem}
+.ml25{margin-left: 0.25rem}
+.ml5{margin-left: 0.05rem}
+.ml4{margin-left: 0.04rem}
+.ml7{margin-left: 0.07rem}
+.ml8{margin-left: 0.08rem}
+.ml9{margin-left: 0.09rem}
+.ml10{margin-left: 0.1rem}
+.ml15{margin-left: 0.15rem}
+.ml17{margin-left:0.17rem}
+.ml20{margin-left: 0.2rem}
+.ml24{margin-left: 0.24rem}
+.ml40{margin-left:0.4rem}
+.ml50{margin-left: 0.5rem}
+.ml70{margin-left: 0.7rem}
+.ml80{margin-left: 0.8rem}
+.ml155{margin-left: 1.55rem}
+.ml57{margin-left:0.57rem}
+.pt10{padding-top: 0.1rem}
+.pt20{padding-top: 0.2rem}
+.pb5{ padding-bottom: 0.05rem }
+.pb20{ padding-bottom: 0.2rem}
+/*清除浮动公共样式*/
+.clearfix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*zoom:1}
+/*显示方式与定位*/
+.poab{
+        position: absolute;
+}
+.posir{position: relative;}
+.block{display: inline-block;}
+.none{display: none;}
+.bnone{border: none}
+/*页面布局*/
+.wt985{ width:985px; margin:0px auto}
+.at{ margin:0px auto}
+.w220{width:2.2rem}
+.layout{ width:100%; }
+/*背景样式*/
+.bgcolor { background-color:#f5f5f5;}
+.bgwhite{ background-color:#ffffff;}
+.bgGray{background-color: #f2f2f2}
+.bgRed{ background-color: red; }
+/* 雪碧图 */
+#fff{color:#fff}
+.orange{color:orange}
+.corf50{color:#F5004B}
+.color333{color: #333;}
+.color029{color:#029cfe}
+.cor7b{color: #7b7b7b;}
+.color8c{color:#8c8c8c}
+.color72{color:#727272}
+.color006{color:#006dd2}
+.colorff5{color:#ff5a00!important}

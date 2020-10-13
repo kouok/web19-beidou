@@ -1,0 +1,239 @@
+/* 头部 */
+.nav{
+    padding: 0.2rem 0.15rem 0.15rem 0.15rem;
+}
+.sousuo{
+    font-size: 0.6rem !important;
+    position: relative;
+    top: 0.1rem;
+    color: #0a346e;
+    /* left: -0.1rem; */
+    font-weight: 551;
+}
+.caidan{
+     font-weight: 551;
+    font-size: 0.7rem !important;
+    position: relative;
+     color: #0a346e;
+    top: 0.1rem;
+    /* left: -0.1rem; */
+}
+
+.xiala{
+ position: absolute;
+     left: -2.25rem;
+     top: 1.1rem;
+       background: #ffffff;
+       z-index: 1000;
+}
+.xiala>ul li{
+    text-align: center;
+    width: 2.9rem;
+    height: 0.77rem;
+  border-bottom: 1px solid #e6e6e6;
+        line-height: 00.77rem;
+   
+}
+.font-sizi{
+      font-size: 0.3rem !important;
+}
+/* 产品中心 */
+.changping{
+    border-bottom: 0.05rem solid #e6e6e6;
+    text-align: center;
+}.changping >div{
+    padding: 0.15rem;
+    border-right: 0.01rem solid #e6e6e6;
+}
+.changping >div>div>img{
+    width: 100%;
+    height: 100%;
+}
+/* 热点新闻 */
+.xinwen{
+     padding: 0.2rem;
+      border-bottom: 0.05rem solid #e6e6e6;
+      align-items: center;
+}
+.xinwen-left{
+    text-align: center;
+    height: 0.467rem;
+      color: red;
+       border-right: 0.01rem solid #cccccc;
+    font-weight: 600;
+    line-height:  0.467rem;
+    width: 26%;
+}
+.xinwen-left{
+    text-align: center;
+    height: 0.467rem;
+    line-height:  0.467rem;
+}
+.laba{
+    position: relative;
+    top: 0.03rem;
+    font-size: 0.4rem !important;
+    font-weight: 600;
+    color: red;
+}
+.xinwen-right{
+     align-items: center;
+}
+.xinwen-right>div{
+     color: #808080;
+     font-weight: 550;
+    height: 0.467rem;
+    line-height: 1;
+     align-items: center;
+  
+   
+    
+}
+
+/* table */
+.tab div a{
+    text-align: center;
+    /* width: 1.3rem; */
+    height: 0.5rem;
+    color: #183884;
+   
+   
+}
+.dibiank{
+ border-bottom: 0.05rem solid #183884 !important;
+}
+.tab>div:nth-child(1){
+    justify-content:space-around;
+    padding-top:  0.1rem;
+      border-bottom: 0.02rem solid #e6e6e6;
+}
+.dianji a{
+    border-bottom: 0.05rem solid #ffffff;
+}
+.tab-img{
+    width: 100%;
+    height: 100%;
+}
+.tab-qukuai{
+    width: 33.33%;
+    text-align: center;
+    line-height: 1;
+    margin-left: 0.1rem;
+}
+.tab>div:nth-child(2){
+    margin-top: 0.2rem;
+     flex-wrap: nowrap;
+}
+.tab{
+     padding: 0.20rem 0.1rem;
+      border-bottom: 0.05rem solid #e6e6e6;
+}
+.tab-qukuai>div:nth-child(2){
+    font-size: 14px;
+}
+.tab-qukuai>div:nth-child(3){
+    width: 1.32rem;
+    height: 0.28rem;
+    text-align: center;
+    line-height: 0.28rem;
+    border: 1px solid #b3b3b3;
+    color: #b3b3b3;
+    margin: auto ;
+    font-size: 0.1rem;
+}
+.tab-qukuai{
+    width: 2.4rem;
+    height: 3.17rem;
+}
+.ck{
+    overflow: hidden;
+}
+.odiv{
+    width: 22.5rem;
+    position: relative;
+   
+}
+.jiantou1{
+    color: #ffffff;
+    width: 0.4rem;
+    height: 0.8rem;
+    background: #b3b3b3;
+    text-align: center;
+    font-size: 24px ;
+    line-height: 00.8rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 0.25rem;
+}
+.jiantou2{
+    color: #ffffff;
+    width: 0.4rem;
+    height: 0.8rem;
+    background: #b3b3b3;
+    text-align: center;
+    font-size: 24px ;
+    line-height: 00.8rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 0.25rem;
+}
+
+/* 列表 */
+.blueT{
+    color: #183884;
+}
+
+.newsCenter{
+    background: #fff;
+    margin: 0.1rem 0;
+    padding: 0.1rem 0.1rem 0.15rem;
+}
+.newsCenter .hd h3{
+    font-weight: 400;
+    margin-left: 0.06rem;
+}
+
+.newsCenter .hd::before{
+    position: absolute;
+    left: 0;
+    content: "";
+    display: block;
+    width: 0.025rem;
+    height: 0.15rem;
+    background: #183884;
+    top:9px;
+}
+.newsCenter .hd{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    border-bottom: 1px solid #999;
+    margin-bottom: 0.1rem;
+    padding: 0.1rem 0;
+}
+.newsCenter .bd li {
+    display: flex;
+    /* position: relative;
+    align-items: center;
+   height: 0.25rem; */
+}
+.newsCenter .bd li img{
+    width: 0.08rem;
+    height: 0.08rem;
+    margin-right: 0.05rem;
+}
+.newsCenter .bd li a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    padding: 0.12rem 0;
+    background: #fff;
+}
+.footer .spacer{
+   margin: 0 0.05rem;
+}
