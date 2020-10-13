@@ -1,0 +1,353 @@
+header {
+    height: 0.96rem;
+    line-height: 0.96rem;
+    padding: 0.19rem
+}
+
+header img {
+    width: 1.48rem;
+    height: 0.54rem
+}
+
+header .search {
+    text-align: right;
+    color: #004098
+}
+
+.search .icon-search {
+    bottom: 0.2rem;
+    font-size: 0.5rem !important;
+}
+
+.search .icon-caidan {
+    bottom: 0.22rem;
+    margin-left: 0.03rem;
+    font-size: 0.6rem !important;
+}
+
+/* 本例子css -------------------------------------- */
+.slideBox {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    max-width: 560px;
+    /* 设置焦点图最大宽度 */
+}
+
+.slideBox .hd {
+    position: absolute;
+    height: 28px;
+    line-height: 28px;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+.slideBox .hd li {
+    display: inline-block;
+    width:0.16rem;
+    height:0.16rem;
+    border-radius: 50%;
+    background: #fff;
+    border:1px solid #183884;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 3px;
+}
+
+.slideBox .hd li.on {
+    background:#183884
+}
+
+.slideBox .bd {
+    position: relative;
+    z-index: 0;
+}
+
+.slideBox .bd li {
+    position: relative;
+    text-align: center;
+}
+
+.slideBox .bd li img {
+    background: url(images/loading.gif) center center no-repeat;
+    vertical-align: top;
+    width: 100%;
+    /* 图片宽度100%，达到自适应效果 */
+}
+
+.slideBox .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 去掉链接触摸高亮 */
+.slideBox .bd li .tit {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-indent: 10px;
+    height: 28px;
+    line-height: 28px;
+    background: url(images/focusBg.png) repeat-x;
+    color: #fff;
+    text-align: center;
+}
+.guanyu{
+    height:1.95rem;
+    background-color: #e6e6e6;
+}
+.icon{
+    width:0.9rem;
+    height:0.9rem;
+    line-height:0.9rem;
+    border-radius:0.13rem;
+    text-align: center;
+    color:#fff;
+}
+.icon span{
+    font-size:0.5rem!important
+}
+.icon-fang{
+    background-color: #28b1f9;
+}
+.icon-chan{
+    background-color: #ff8d3a
+}
+.icon-jie{
+    background-color: #6fd700
+}
+.icon-lian{
+    background-color: #ff6868
+}
+.bgw{
+    background-color: #fff;
+}
+.guanyu .flex{
+    height: 1.85rem;
+    padding-top: 0.2rem;
+}
+.redian{
+    height:1.2rem;
+    padding:0.32rem 0.33rem 0.34rem 0.44rem;
+    border-bottom:0.1rem solid  #e6e6e6;
+}
+.redian h3{
+    color:#f10f1a;
+    font-size:0.29rem;
+}
+.redian .icon-yinliang{
+    color:#f10f1a;
+    font-size:0.35rem;
+    margin-top:0.05rem
+}
+.redian .slide{
+    display: inline-block;
+    width:0.02rem;
+    height:0.44rem;
+    background-color: #ccc;
+    margin-left:0.2rem;
+    margin-right:0.2rem;
+    margin-top:0.03rem
+}
+.redian p{
+    font-size:0.24rem;
+    color:#666666;
+    line-height:0.33rem
+}
+
+.tab .tab_header{
+    border-bottom: 0.02rem solid #ccc;
+}
+.tab .tab_header a{
+    display: inline-block;
+    width:2rem;
+    height:0.78rem;
+    font-size:0.26rem;
+    line-height:0.8rem;
+    text-align: center;
+}
+.on{
+    border-bottom:0.06rem solid #183884;
+    color:#183884
+}
+
+.tab_content img{
+    width:100%
+}
+.tab_content h2{
+    font-size:0.24rem
+}
+.tab_content a{
+    display: inline-block;
+    width:1.34rem;
+    height:0.4rem;
+    border:1px solid #b3b3b3;
+    color: #b3b3b3;
+    font-size: 0.18rem;
+    line-height:0.3rem
+}
+.tab_body{
+    padding:0.35rem 0.2rem;
+    overflow: hidden;
+    width:100%
+}
+.tab_content{
+    width:2.3rem;
+    height:3.18rem;
+    border:1px solid #e6e6e6
+}
+.tab_menu{
+    width: 15.4rem;
+    right:0
+}
+.guanyu .flex p{
+    font-size:0.24rem;
+    margin-top:0.03rem
+}
+.tab_content h2{
+    font-size:0.24rem;
+    line-height:0.24rem;
+}
+.tab_content a{
+    display: inline-block;
+    margin-top:0.15rem
+}
+.contorl{
+    position: absolute;
+    top:50%;
+    left: 0.2rem;
+    width:7.1rem;
+    z-index: 20;
+    transform: translateY(-50%);
+}
+.contorl button{
+    width:0.33rem;
+    height:0.88rem;
+    box-sizing: border-box;
+    line-height:0.88rem;
+    color:#fff;
+    border:none;
+    font-size:0.3rem;
+    padding-left: 0.1rem;
+    border-radius: 0.1rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.contorl_on{
+    background: #183884!important
+}
+.news{
+    height:2.7rem;
+    border-top:0.1rem solid #e6e6e6;
+    padding:0 0.2rem 0.4rem 0.2rem
+}
+.newhead{
+    height:0.7rem;
+    color:#183884;
+    line-height:0.75rem;
+    border-bottom: 0.02rem solid #999;
+}
+.news_slide{
+    top:0.25rem;
+    margin-right:0.1rem;
+    display: inline-block;
+    width:0.05rem;
+    height:0.3rem;
+    background-color :#183884;
+}
+.news_center li span:last-child{
+    font-size:0.2rem;
+    color:#999
+}
+.news_center li span:nth-child(2){
+    height: 0.4rem;
+    overflow: hidden;
+}
+.news_center li span:first-child{
+    color:#183884;
+    font-size:0.18rem;
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+.news_center{
+    line-height:0.5rem;
+    margin-top: 0.2rem;
+}
+.footer{
+    border-top:0.1rem solid #e6e6e6;
+    padding:0.26rem 0;
+    line-height:0.3rem
+}
+.footer p:first-child span{
+    color:#183884;
+    font-size: 0.21rem;
+    margin-right: 0.1rem;
+    display: inline-block;
+}
+.footer p:first-child a{
+    color:#183884;
+    font-size: 0.21rem;
+    margin-right: 0.1rem;
+}
+.footer section{
+    color: #999;
+    font-size: 0.17rem;
+}
+.er_menu{
+    position: absolute;
+    top:0;
+    width:100%;
+    /* height:100%; */
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.2);
+}
+.er_menu ul{
+    width:2.9rem;
+    height:2.45rem;
+    color:#999;
+    position: absolute;
+    top:1.2rem;
+    right:0.2rem
+}
+.menu_content{
+    position: absolute;
+    right:0.3rem;
+    top:1rem
+}
+.er_menu ul li span{
+    margin-right: 0.33rem;
+    font-size: 0.26rem;
+}
+.er_menu ul li{
+    height:0.76rem;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0.76rem;
+    background-color: #fff;
+    border-top:0.02rem solid #e6e6e6
+}
+.er_menu ul li:first-child{
+    border:0
+}
+.menu_content_on{
+    background-color: #183884!important;
+    color:#fff
+}
+.icon-fangzi{
+    right:0.28rem
+}
+.er_menu ul li:first-child::before{
+    content:"";
+    position: absolute;
+    right:0.05rem;
+    top:-0.61rem;
+    border-top:0.3rem solid transparent;
+    border-left:0.3rem solid transparent;
+    border-bottom:0.3rem solid #fff;
+    border-right:0.3rem solid transparent;
+}
+.close {
+    width:100%;
+    height:100%
+}
