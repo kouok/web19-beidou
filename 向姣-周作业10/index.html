@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <title>移动端开发模板</title>
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!-- 字体样式 -->
+    <!-- 幻灯片的插件 -->
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        //昨天的
+        // var w=window.innnerWidth;
+        // 今天：
+        var w=document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili=w/7.5;
+        document.documentElement.style.fontSize=bili+"px";
+
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+<body>
+    <!-- 头部导航页 -->
+    <div class="header">
+        <div class="logo">
+            <img src="image/03.png"/>
+        </div>
+        <div class="header-r">
+            <span class="iconfont icon-search"></span>
+            <span class="iconfont icon-toggle-copy sou"></span>
+            <!-- <div class="la">
+                <div>
+                    <a href="#">首页</a>
+                </div>
+                <div>
+                    <a href="#">关于华信</a>
+                </div>
+                <div>
+                    <a href="#">产品中心</a>
+                </div>
+                <div>
+                    <a href="#">解决方案</a>
+                </div>
+                <div>
+                    <a href="#">公司新闻</a>
+                </div>
+                <div>
+                    <a href="#">人才招聘</a>
+                </div>
+                <div>
+                    <a href="#">联系我们</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- 幻灯片 -->
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                    <li>
+                        <a class="pic" href="#"><img src="image/2a_06.png" /></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/2a_06.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/2a_06.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/2a_06.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="image/2a_06.png"/></a>
+                    </li>
+            </ul>
+        </div>
+        <!-- 小圆点指示器 -->
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#slideBox",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPage:true,//自动分页
+            autoPlay:true //自动播放
+        });
+    </script>
+    <!-- 关于华信、产品中心、解决方案、联系我们 -->
+    <div class="hx">
+        <a href="#">
+            <img src="image/3e_09.png"/>
+            <div>关于华信</div>
+        </a> 
+        <a href="#">
+            <img src="image/rc_11.png"/>
+            <div>产品中心</div>
+        </a>
+        <a href="#">
+            <img src="image/4b_13.png"/>
+            <div>解决方案</div>
+        </a>
+        <a href="#">
+            <img src="image/cd_15.png"/>
+            <div>联系我们</div>
+        </a>
+    </div>
+    <!-- 热点新闻 -->
+    <div class="rd">
+        <div class="xw">
+            <a href="#" class="xw-1">热点新闻</a>
+            <span class="iconfont icon-yinliang"></span>
+            <a href="#">UFirebird战略合作发布，打响北斗低功耗物联网第一弹</a>
+        </div>            
+    </div>
+    <!-- 高精度定位天线 -->
+    <div class="dw">
+        <div class="dw-1">
+            <a href="#">高精度定位天线</a>
+            <a href="#">数传电台</a>
+            <a href="#">卫星通信</a>
+        </div>
+        <div class="heng"></div>
+        <!-- 小轮播图 -->
+        <div class="banner">
+            <div class="banners">
+                <div class="photo"> 
+                    <img src="image/xc_22.png">
+                </div>
+                <div class="tx">
+                    <div class="jz">3D基准站天线</div>
+                     <button class="btn">查看详情>></button>
+                </div>
+            </div>
+            <div class="banners">
+                <div class="photo"> 
+                    <img src="image/bh_24.png">
+                </div>
+                <div class="tx">
+                    <div class="jz">2D基准站天线</div>
+                     <button class="btn">查看详情>></button>
+                </div>
+            </div>
+            <div class="banners">
+                <div class="photo"> 
+                    <img src="image/cvg_26.png">
+                </div>
+                <div class="tx">
+                    <div class="jz">无人机天线</div>
+                     <button class="btn">查看详情>></button>
+                </div>
+            </div>
+        </div>
+        <!-- 指示器 -->
+        <a class="prev" href="javascript:void(0)"><</a>
+        <a class="next" href="javascript:void(0)">></a>
+    </div>
+    <!-- 新闻中心 -->
+    <div class="new">
+        <div class="zx ">
+            <div class="newa">
+                <a href="#" class="wen">新闻中心/</a>
+                <a href="#" class="wen-1">NEWS CENTER</a>
+            </div>
+            <div class="ck">
+                <a href="#" class="geng">查看更多>></a>
+            </div>
+        </div>
+        <div class="lian"></div>
+        <div class="qiang">
+            <div class="dian">
+                <span class="iconfont icon-yuanquan"></span>
+                <a href="#">RTK电台哪家强？eRadio智能电台大比测</a>
+            </div>
+            <div class="six">2018-07-16</div>
+        </div>
+        <div class="qiang">
+            <div class="dian">
+                <span class="iconfont icon-yuanquan"></span>
+                <a href="#">共建北斗新时代|华信亮相第九届中国卫星导航...</a>
+            </div>
+            <div class="six">2018-07-16</div>
+        </div>
+        <div class="qiang">
+            <div class="dian">
+                <span class="iconfont icon-yuanquan"></span>
+                <a href="#">创新.融合|华信引领高精度天线进入全网通时代</a>
+            </div>
+            <div class="six">2018-07-16</div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div>
+        <div class="db">
+            <div class="cai">
+                <a href="#">人才招聘 |</a>
+                <a href="#">留言反馈 |</a>
+                <a href="#">友情链接</a>
+            </div>
+            <div class="fan">翻版必究 粤ICP备09221680号</div>
+            <div class="fan">Copyright©2012深圳市华信天线技术有限公司</div>
+        </div>
+    </div>
+
+</body>
+</html>

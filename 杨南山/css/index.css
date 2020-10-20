@@ -1,0 +1,418 @@
+
+.header{
+    position: relative;
+    display: flex;
+    height: 0.6rem;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 0.1rem;
+    flex:1;
+}
+.logo img{
+    display: block;
+    width: 0.65rem;
+    height: 0.4rem;
+}
+.find-group a span{
+    font-size: 0.35rem;
+    color:#124d9f ;
+}
+.find-group{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 0.1rem;
+}
+.find-group a{
+    width: 0.6rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.task{
+    position: relative;
+    margin-top: -0.03rem;
+}
+.taskList{
+    width: 2rem;
+    position: absolute;
+    top: 0.76rem;
+    right: 0;
+    background: #f5f5f5;
+   display: none;
+    z-index: 9999999999999;
+}
+.taskList li:active{
+    background: #183884;
+}
+.taskList::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    top: -0.2rem;
+    right: 0.14rem;
+    border-width: 0.1rem;
+    border-color: transparent transparent #f5f5f5 transparent;
+    border-style: solid ;
+
+}
+.taskList a{
+    width: 100%;
+    display: block;
+    line-height: 0.556rem;
+    height: 100%;
+   
+}
+.taskList li{
+    width: 100%;
+    height: 0.55rem;
+    border-bottom: 1px solid #ccc;
+}
+.taskList li span{
+    display: inline-block;
+    font-size: 0.26rem;
+    color:#999;
+}
+.taskList li span:last-of-type{
+    width: 1.2rem;
+    text-align: left;
+    padding-left: 0.15rem;
+   
+}
+.query .search{
+    position: absolute;
+    top: 0.66rem;
+    left: 0.1rem;
+    width: 3.55rem;
+    height: 0.45rem;
+    background: #fff;
+    padding:0 0.1rem;
+    z-index: 9999999999999999;
+    border-radius: 0.05rem;
+    display: none;
+    
+}
+.query .search:before{
+    position: absolute;
+    top: -0.2rem;
+    right: 0.78rem;
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent ;
+}
+.query .search input{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.35rem;
+    font-size: 0.16rem;
+    padding-right: 0.4rem;
+    top: 0.05rem;
+}
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.33);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index:999999999999;
+}
+.search .iconfont{
+    position: absolute;
+    right: 0.16rem;
+    font-size: 0.3rem;
+    color:#124d9f ;
+}
+
+/* 轮播图插件样式 */
+.slideBox{ position:relative; width:100%;  height:100%; overflow:hidden;  }
+	.slideBox .hd{ transform:translateX(50%);position:absolute; height:0.28rem; line-height:0.28rem; bottom:0.1rem; right: 50%; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:0.1rem; height:0.1rem;border:1px solid blue; -webkit-border-radius:5px; -moz-border-radius:50%; border-radius:50%; background:#fff; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+	.slideBox .hd li.on{ background:blue;  }
+	.slideBox .bd{ position:relative; z-index:0; }
+	.slideBox .bd li{ position:relative;  }
+	.slideBox .bd li img{ width:100%;  height:2.5rem; display:block;   }
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+	.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:0.1rem; height:0.28rem; line-height:0.28rem; background:url(images/focusBg.png) repeat-x; color:#fff;   }   
+/* 关于我们样式 */
+.Aboutwe {
+    display: flex;
+    width: 100%;
+    height: 1.15rem;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 0.16rem;
+}
+.we-item{
+    display: flex;
+    width: 24.8%;
+    background: #fff;
+    align-items: center;
+    justify-content:center;
+}
+.we-item .tit-icon{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: pink;
+    margin:  0 auto;
+    line-height: 0.5rem;
+    border-radius: 5px;
+
+    color:#fff;
+}
+.we-item p{
+    color: #333;
+    margin-top: 0.05rem;
+}
+.news{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.6rem;
+    margin: 0.1rem 0;
+    background: #fff;
+    align-items: center;
+    padding-left: 0.2rem;
+}
+.news .title{
+    color: #f00;
+    font-size: 0.2rem;
+    font-weight: 400;
+}
+.news .spacer{
+    width: 0.01rem;
+    height: 0.22rem;
+    background: #ccc;
+    margin: 0 0.1rem;
+}
+.box{
+    display: flex;
+    position: relative;
+    height: 0.35rem;
+    overflow: hidden;
+    box-sizing: border-box;
+   
+}
+.box .iconfont{
+    align-self: center;
+}
+.news .news_li{
+    position: relative;
+    left: 3px;
+    top: 0;
+    width: 2.3rem;
+}
+.news .news_li li a{
+    display: block;
+    width: 100%;
+}
+.news .news_li li{
+    display: flex;
+    height: 0.35rem;
+    align-items: center;
+}
+
+/* 轮播图和tab切换 */
+.tabBox{
+    width: 100%;
+    height: 2.2rem;
+    background: #fff;
+    margin-bottom: 1px;
+}
+.tabBox>.hd{
+    border-bottom: 1px solid #ccc;
+}
+.tabBox .hd-list{
+    display: flex;
+    justify-content: space-around;
+}
+.tabBox .hd-list li{
+    position: relative;
+    height:0.37rem;
+    line-height: 0.37rem;
+}
+.tabBox .hd-list li.on::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: #183884;
+}
+.tabBox .hd-list li a{
+    display: block;
+    width: 100%;
+    color: #183884;
+}
+
+
+	/* 左右焦点滑动 -------------------------------------- */
+    .picScroll{ 
+        margin:0 auto; 
+        text-align:center; 
+        position: relative;
+        left: 0;
+        top: 0; 
+        opacity: 0;
+        
+    }
+    .picScroll .bd ul{ width:100%; 
+         float:left;
+         padding: 10px; 
+    }
+    .picScroll .bd li{width: 32%;
+        font-size:14px;
+         text-align:center; 
+         float: left;height: 150px;
+         border: 1px solid #ccc;
+         background: #fff;
+    }
+    .picScroll .bd li a{
+        -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ 
+        display: block;
+    }
+	.picScroll .bd li img{
+         display: block;
+         width:100%; 
+         height:90px; 
+          background:url(images/loading.gif) #fff center center no-repeat; 
+    }
+
+
+    .picScroll .hd{width: 100%;
+        position: absolute;
+        height:40px; line-height:40px;   
+        text-align:left; 
+        padding:0 10px;
+        z-index: 9999;
+    }
+    .picScroll .hd ul{ 
+        float:right; 
+        padding-top:16px;   
+    }	
+	.picScroll .hd li{ 
+        float:left; width:8px; 
+        height:8px; 
+        background:#D0D0D0; 
+        margin:0 5px; 
+        overflow:hidden; 
+        -webkit-border-radius:8px;
+         -moz-border-radius:8px; 
+         border-radius:8px; 
+    }
+    .picScroll .bd li:nth-of-type(2){
+        margin: 0 4px;
+    }
+	.picScroll .hd .on{ 
+        background:#80BD6D;  
+    }
+    .picScroll .prev,.picScroll .next{
+        display:block; 
+        width:18px; 
+        height:45px; 
+        background-color:#183884 ;
+        transform:translateY(127%);
+        border-radius: 5px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+    }
+    .picScroll .prev{
+        float: left;
+        margin-left: 5px;
+    }
+    .picScroll .next{
+        float:right; 
+        margin-right: 10px;
+    }
+	.picScroll .prevStop{ background: #ccc; }
+    .picScroll .nextStop{ background:#ccc; }
+    
+    .picScroll .bd li p{
+        color: #000;
+    }
+    .picScroll.current{
+        transition: 0.8s ease-in;
+        opacity: 1;
+        z-index: 99999999;
+    }
+    .lh{
+        padding: 0.03rem 0.03rem;
+        border: 1px solid #666;
+        font-size: 0.12rem;
+        color: #666;
+    }
+    .blueT{
+        color: #183884;
+    }
+
+    .newsCenter{
+        background: #fff;
+        margin: 0.1rem 0;
+        padding: 0.1rem 0.1rem 0.15rem;
+    }
+    .newsCenter .hd h3{
+        font-weight: 400;
+        margin-left: 0.06rem;
+    }
+
+    .newsCenter .hd::before{
+        position: absolute;
+        left: 0;
+        content: "";
+        display: block;
+        width: 0.025rem;
+        height: 0.15rem;
+        background: #183884;
+        top: 0.05rem;
+    }
+    .newsCenter .hd{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 0.24rem;
+        line-height: 0.24rem;
+        border-bottom: 1px solid #999;
+        margin-bottom: 0.1rem;
+    }
+    .newsCenter .bd li {
+        display: flex;
+        position: relative;
+        align-items: center;
+       height: 0.25rem;
+    }
+    .newsCenter .bd li img{
+        width: 0.08rem;
+        height: 0.08rem;
+        margin-right: 0.05rem;
+    }
+    .newsCenter .bd li a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        padding: 0.12rem 0;
+        background: #fff;
+    }
+    .footer .spacer{
+       margin: 0 0.05rem;
+    }

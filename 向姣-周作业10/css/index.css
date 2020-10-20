@@ -1,0 +1,254 @@
+/* 头部导航页 */
+body{
+    font-size: 0.16rem;
+    background:silver;
+}
+.header{
+    height: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+.logo{
+    margin-top: 0.08rem;
+    margin-left: 0.3rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.header-r{
+    line-height: 1rem;
+    margin-right: 0.3rem;
+}
+.header-r .iconfont{
+    font-size: 30px;
+    color:#004098;
+    margin-right: 0.2rem;
+}
+.la{
+    width: 2.8rem;
+    height: 5.5rem;
+    background: white;
+    z-index: 1000;
+}
+/* 幻灯片 */
+.slideBox{ position:relative; overflow:hidden; margin:0px auto;  max-width:560px;background:white;/* 设置焦点图最大宽度 */ }
+    .slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:18px; right:100px; z-index:1; }
+    .slideBox .hd li{ display:inline-block; width:10px; height:10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+    .slideBox .hd li.on{ background:#fff;  }
+    .slideBox .bd{ position:relative; z-index:0; }
+    .slideBox .bd li{ position:relative; text-align:center;  }
+    .slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+    .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+    .slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:left;  }
+/*关于华信、产品中心、解决方案、联系我们  */
+.hx{
+    height: 2.5rem;
+    display: flex;  
+    justify-content: space-around;
+    margin-bottom: 0.1rem;
+    background:white;
+}
+.hx a{
+    width: 1.2rem;
+    height: 1.2rem;
+    color:black;
+    text-align: center;
+    font-size: 0.3rem;
+    margin-top: 0.4rem;
+}
+.hx a img{
+    width: 100%;
+    height: 100%;
+}
+/* 热点新闻 */
+.rd{
+    height: 1.2rem;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+}
+.rd .xw{
+    line-height:1.2rem;
+}
+.rd .xw .xw-1{
+    border-right: 1px solid silver;
+    display: inline-block;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding-right: 0.2rem;
+    font-size: 0.3rem;
+    font-weight: 600;
+    color:red;
+}
+.rd .xw .iconfont{
+    color:red;
+    font-size: 0.4rem;
+}
+.rd .xw a{
+    line-height: 0.3rem;
+    color:black;
+    font-size: 0.2rem;
+}
+/* 高精度定位天线 */
+.dw{
+    background: white;  
+    height: 5.8rem; 
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+.dw-1{  
+    display: flex;
+    justify-content: space-around;
+    height: 1.2rem;
+}
+.dw-1 a{
+    line-height: 1.2rem;
+    color:#004098;
+    font-size: 0.4rem;
+}
+.heng{
+    border-bottom:2px solid silver;
+}
+/* 小轮播图 */
+.banner{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.banners{
+    width: 2.31rem;
+    height: 3.5rem;
+    border:1px solid silver;
+}
+.banners .photo{
+    width: 2.31rem;
+    height: 1.95rem;
+}
+.banners .photo img{
+    width: 100%;
+    height: 100%;
+}
+.tx{
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.jz{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+}
+.btn{
+    border:1px solid silver;
+    background:white;
+    color:silver;
+}
+/* 指示器 */
+.prev{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.8rem;
+    border:1px solid silver;
+    color:white;
+    background: silver;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    position: absolute;
+    bottom: 2.2rem;
+    left: 0.2rem;
+}
+.next{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.8rem;
+    border:1px solid silver;
+    color:white;
+    background: #004098;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    position: absolute;
+    bottom: 2.2rem;
+    right: 0.2rem;
+}
+/* 新闻中心 */
+.new{
+    background:white;
+    height: 3.2rem;
+    padding-top: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+.zx{
+    height: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.zx .newa .wen{
+    color:#004098;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    margin-left: 0.2rem;
+    border-left:3px solid #004098;
+    padding-left: 0.1rem;
+}
+.wen-1{
+    color:#004098;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+}
+.ck .geng{
+    color:#004098;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    margin-right: 0.2rem;
+}
+.lian{
+    width: 7.3rem;
+    margin-left: 0.1rem;
+    border-bottom: 1px solid silver;
+    margin-bottom: 0.3rem;
+}
+.qiang{
+    display: flex;
+    justify-content: space-between;
+    height: 0.5rem;
+}
+.dian .iconfont{
+    color:#004098;
+    vertical-align: middle;
+    font-size: 0.4rem;
+    margin-left: 0.2rem;
+}
+.dian a {
+    color:black;
+    line-height: 0.6rem;
+    font-size: 0.25rem;
+}
+.qiang .six{
+    line-height: 0.6rem;
+    color:silver;
+    font-size: 0.2rem;
+    margin-right: 0.2rem;
+}
+/* 底部 */
+.db{
+    height: 1.8rem;
+    background:white;
+    text-align: center;
+}
+.cai{
+    padding-top: 0.3rem;
+}
+.cai a {
+    color:#004098;
+    font-size: 0.3rem;
+}
+.fan{
+    color:silver;
+    font-size: 0.25rem;
+}

@@ -1,0 +1,86 @@
+{
+  "id": "2113893",
+  "name": "北斗星移动端",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "169727",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "561597",
+      "name": "纸",
+      "font_class": "zhi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "693586",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "769677",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "2801589",
+      "name": "魔方",
+      "font_class": "mofang",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "2932296",
+      "name": "房子",
+      "font_class": "fangzi",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "9571443",
+      "name": "工具",
+      "font_class": "gongju",
+      "unicode": "e787",
+      "unicode_decimal": 59271
+    },
+    {
+      "icon_id": "10966369",
+      "name": "音量",
+      "font_class": "yinliang",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "11259783",
+      "name": "大厦",
+      "font_class": "ziyuan",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "14624612",
+      "name": "联系人",
+      "font_class": "lianxiren",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "16288724",
+      "name": "单选",
+      "font_class": "iconoption",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
