@@ -1,0 +1,450 @@
+p{
+	font-size: .14rem;
+}
+.header{
+	display: flex;
+	width: 100%;
+	height: .96rem;
+	justify-content: space-between;
+	padding: 0 .2rem;
+	background-color: #fff;
+}
+
+.header-left{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.header-right{
+	display: flex;
+	width: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+.header-right>div{
+	flex: 1;
+}
+
+.fangdajing{
+	/* display: inline-block; */
+	background: url(../images/sprite.png) no-repeat -5.51rem -.26rem;
+	width: .4rem;
+	height: .4rem;
+	vertical-align: middle;
+	background-size: 12.98rem 5.5rem;
+}
+
+.menu{
+	/* display: inline-block; */
+	background: url(../images/sprite.png) no-repeat -5.43rem -.99rem;
+	width: .48rem;
+	height: .32rem;
+	vertical-align: middle;
+	cursor: pointer;
+	background-size: 12.98rem 5.5rem;
+}
+
+.slide{
+	width: 100%;
+}
+
+/* 产品 */
+
+.product{
+	display: flex;
+	background-color: #fff;
+}
+
+.product>div{
+	/* flex: 1; */
+	/* height: 1.05rem; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	flex-direction: column;
+	border-right: 1px solid #ddd;
+	padding: .1rem;
+}
+
+/* .product div>div{
+	width: 50%;
+}
+img{
+	width: 100%;
+}
+
+.product div>p{
+	margin-top: .1rem;
+} */
+
+.product div>a{
+	display: flex;
+  width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.product div a>div{
+	width: 50%;
+}
+
+.product div a>p{
+	margin-top: .1rem;
+}
+.product div a div>img{
+	width: 100%;
+}
+
+.news{
+	display: flex;
+	background-color: #fff;
+	margin: .1rem 0;
+	padding: .2rem;
+	height: .8rem;
+}
+
+.newszuo{
+	width: 26%;
+	display: flex;
+	align-items: center;
+	
+}
+
+.newsyou{
+	width: 74%;
+	display: flex;
+	margin-left: .1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.newszuo>a{
+	display: block;
+	border-right: 1px solid #ddd;
+	font-size: .14rem;
+	font-weight: 700;
+	height: .2rem;
+	padding-right: .2rem;
+}
+
+.laba{
+	width: .16rem;
+	height: .16rem;
+	box-sizing: border-box;
+	margin-right: .1rem;
+}
+
+.laba>img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.newsyou>p{
+	width: 2.3rem;
+	font-size: .12rem;
+	
+}
+
+/* 产品列表 */
+
+.btn_menu{
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	padding: .1rem;
+	justify-content: space-between;
+	border-bottom: .01rem solid #ddd;
+	padding-bottom: 0;
+}
+
+.btn_common{
+	/* flex: 1; */
+	text-align: center;
+	font-size: .16rem;
+	height: .4rem;
+	line-height: .4rem;
+	color: #11275C;
+	font-weight: 500;
+}
+
+.btn_menu .btn_common:nth-child(1){
+	flex-basis: 40%;
+}
+.btn_menu .btn_common:nth-child(2){
+	flex-basis: 30%;
+}
+.btn_menu .btn_common:nth-child(3){
+	flex-basis: 30%;
+}
+
+.active{
+	border-bottom: .02rem solid #11275C;
+}
+
+/* 产品 */
+.plist{
+	background-color: #fff;
+	position: relative;
+}
+.ul{
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 2rem;
+}
+
+.bottom_content{
+	position: absolute;
+	width: 200%;
+	height: auto;
+	transition: all .5s;
+	top: 0;
+	left: 0%;
+	display: flex;
+}
+
+.body_1{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: .1rem;
+	justify-content: space-around;
+}
+
+.list{
+	width: 32%;
+}
+
+.list div>img{
+	width: 100%;
+	height: 100%;
+}
+
+.list_body{
+	border: .01rem solid #ddd;
+	border-top: none;
+	text-align: center;
+	padding: .1rem;
+}
+
+.list_body>h4{
+	font-size: .14rem;
+}
+
+.list_body div button{
+	color: #717171;
+	border: .01rem solid #717171;
+	text-align: center;
+	background-color: #fff;
+	padding: .03rem .08rem;
+	font-size: .14rem;
+}
+
+.list_body div button:hover{
+	background-color: #717171;
+	color: white;
+}
+
+.top_menu{
+	position: absolute;
+	top: 43%;
+}
+
+.zuo{
+	position: absolute;
+	left: .1rem;
+}
+
+.you{
+	position: absolute;
+	left: 3.45rem;
+}
+
+.common{
+	width: .2rem;
+	height: .6rem;
+}
+
+.common>img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 新闻中心 */
+.news_center{
+	background-color: #fff;
+	padding: .1rem;
+}
+
+.newtop{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #11275C;
+	padding-bottom: .05rem;
+}
+
+.newtop div a{
+	font-size: .12rem;
+	color: #11275C;
+}
+
+.line{
+	display: inline-block;
+	width: .04rem;
+	height: .18rem;
+	background-image: linear-gradient(126deg,#11275C 0,black 100%);
+	vertical-align: middle;
+	position: relative;
+	bottom: .02rem;
+}
+
+.newtop div span{
+	color: #11275C;
+	font-weight: 700;
+	font-size: .16rem;
+}
+
+.line2{
+	display: inline-block;
+	font-weight: 400 !important;
+	font-size: .12rem !important;
+}
+
+.news_center{
+	padding-bottom: .2rem;
+}
+
+.news_item{
+	display: flex;
+	justify-content: space-between;
+	height: .2rem;
+	line-height: .2rem;
+	margin-top: .15rem;
+}
+
+.news_item div:nth-child(1){
+	width: 70%;
+	font-size: .14rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.news_item div:nth-child(2){
+	width: 30%;
+	text-align: right;
+	font-size: .12rem;
+}
+
+/* .sp1{
+	display: inline-block;
+	background: url(../images/sprite.png)no-repeat -11.12rem -3.29rem;
+	width: .17rem;
+	height: .17rem;
+	margin: 0 auto;
+} */
+
+.sp1{
+	display: inline-block;
+	height: .12rem;
+	width: .12rem;
+	position: relative;
+	bottom: .02rem;
+	margin-right: .05rem;
+}
+
+.sp1>img{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	padding: .2rem 0;
+	background-color: #fff;
+	margin-top: .1rem;
+}
+
+.footlist a{
+	color: #11275C;
+	font-size: .14rem;
+}
+
+.line1{
+	display: inline-block;
+	width: .02rem;
+	height: .14rem;
+	background-color: #11275C;
+	vertical-align: middle;
+	margin: 0 .1rem;
+}
+
+.footer div p{
+	color: #939393;
+	font-size: .12rem;
+	margin-top: .05rem;
+}
+
+/* 隐藏菜单 */
+.fixed{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.2);
+	
+}
+
+.fixed_body{
+	width: 1.7rem;
+	/* height: 3.5rem; */
+	background-color: #fff;
+	position: absolute;
+	/* top: 14%; */
+	top: .9rem;
+	right: 5%;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+}
+
+.jiao{
+	position: absolute;
+	top: -7%;
+	right: 10%;
+	width: .2rem;
+	height: .2rem;
+	z-index: 10000;
+	border-bottom: none !important;
+}
+
+.jiao>img{
+	width: 100%;
+	/* height: 100%; */
+}
+
+.fixed_body div i{
+	color: #B9B9B9;
+	font-size: .24rem;
+	margin-right: .05rem;
+}
+
+.fixed_body div a{
+	color: #999;
+	font-size: .16rem;
+	/* display: inline-block;
+	height: .3rem;
+	line-height: .24rem; */
+}
+
+.fixed_body>div{
+	padding: .1rem 0;
+	border-bottom: .01rem solid #E9E9E9;
+}
