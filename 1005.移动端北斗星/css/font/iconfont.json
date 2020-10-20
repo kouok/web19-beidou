@@ -1,0 +1,58 @@
+{
+  "id": "2117882",
+  "name": "huaxin",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "954024",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1287698",
+      "name": "联系我们",
+      "font_class": "lianxiwomen",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3447390",
+      "name": "产品中心-修改",
+      "font_class": "chanpinzhongxin-xiugai",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "3764367",
+      "name": "小房子",
+      "font_class": "weibiaoti-",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "5194314",
+      "name": "钳子",
+      "font_class": "qianzi",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "8361756",
+      "name": "大楼",
+      "font_class": "dalou",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "9869785",
+      "name": "49资讯-人才招聘",
+      "font_class": "zixun-rencaizhaopin",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    }
+  ]
+}
